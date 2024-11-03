@@ -37,7 +37,7 @@ const About = () => {
         <SubTitle>Why Choose Us</SubTitle>
         <Text>
           With a professional management team in North America and technical expertise from our skilled developers globally,
-          we ensure that every project aligns with our high standards. Our unique approach combines local oversight with
+          we ensure that every project aligns with our high quality standards. Our unique approach combines local oversight with
           global expertise to deliver seamless, reliable solutions.
         </Text>
       </Section>
