@@ -11,7 +11,7 @@ const HeroSection = () => {
   return (
     <HeroContainer style={fadeIn}>
       <HeroContent>
-        <HeroTitle>Your Trusted IT Partner for Transformation and Growth</HeroTitle>
+        <HeroTitle>Your Trusted IT Partner for Transformation and Growth.</HeroTitle>
         <HeroSubheading>
           Accelerate your business with tailored solutions in AI, data, cloud, and digital transformation, managed for excellence. 
         </HeroSubheading>
