@@ -1,25 +1,26 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import bgvideo from '../assets/data_layer_background.mp4';
+import bgimg from '../assets/neural network.jpg';
 
 export const Hero = () => {
   return (
-    <div className="relative h-screen w-full overflow-hidden">
+    <div className="relative h-screen w-full overflow-hidden bg-black">
       {/* Video Background */}
-      <video
+      {/* <video
         autoPlay
         loop
         muted
         playsInline
-        className="absolute top-0 left-0 w-full h-full object-cover blur-sm"
+        className="absolute top-0 left-0 w-full h-full object-cover blur-md"
       >
         <source src={bgvideo} type='video/mp4' />
         Your Browser does not support video tag.
-      </video>
+      </video> */}
+      <img src={bgimg} alt="Hero Section BG image"  className='absolute top-0 left-0 w-full h-full object-cover blur-sm'/>
 
       {/* Dark Overlay */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black/50 z-10"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-black/50 z-10"/>
 
       {/* Content */}
       <div className="relative z-20 h-full flex flex-col justify-center items-center text-white px-4">
@@ -30,8 +31,7 @@ export const Hero = () => {
           </h1>
 
           <p className="text-xl md:text-2xl mb-8 text-gray-200 animate-fade-in-delay">
-            We create innovative solutions that drive business growth
-            and enhance user experience
+            We create innovative solutions that drive business growth and enhance user experience
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-delay-2">
@@ -50,31 +50,3 @@ export const Hero = () => {
     </div>
   );
 };
-
-// Add these animations to your global CSS or Tailwind config
-const styles = `
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-fade-in {
-  animation: fadeIn 1s ease-out forwards;
-}
-
-.animate-fade-in-delay {
-  animation: fadeIn 1s ease-out 0.5s forwards;
-  opacity: 0;
-}
-
-.animate-fade-in-delay-2 {
-  animation: fadeIn 1s ease-out 1s forwards;
-  opacity: 0;
-}
-`;

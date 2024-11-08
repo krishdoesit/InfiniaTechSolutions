@@ -16,7 +16,7 @@ const data = {
 const Menu = ({ ChngMenuState }) => {
     const [dropdownOpen, setDropdownOpen] = useState(false);
     return (
-        <div className="fixed top-0 right-0 w-full h-fit bg-[#1e1e2f] border-solid rounded-2xl">
+        <div className="fixed top-0 right-0 w-full h-fit bg-black border-solid rounded-2xl">
             <div className="relative p-6">
                 <img src={closeb} className="absolute top-6 right-6 p-2 w-12 h-12" alt="Close Menu" onClick={() => ChngMenuState(false)} />
                 <div className="flex flex-col space-y-6 mt-16 items-center">
@@ -42,7 +42,7 @@ export const Header = () => {
     const [menuopen, ChangeMenuState] = useState(false);
 
     return (
-        <nav className="sticky flex justify-between items-center px-[5rem] max-md:px-[2rem] p-[1rem] text-white bg-[#1e1e2f] w-full top-0 left-0 shadow-md z-[1000] max-xl:justify-between">
+        <nav className="sticky flex justify-between items-center px-[5rem] max-md:px-[2rem] p-[1rem] text-white bg-black w-full top-0 left-0 shadow-md z-[1000] max-xl:justify-between">
             <a className="font-black max-md:text-lg" href="/">
                 INFINIA TECH SOLUTIONS
             </a>
@@ -55,7 +55,7 @@ export const Header = () => {
             </div>
             <img src={menub} alt="Open Menu" className="visible xl:hidden max-md:max-h-[1.5rem] cursor-pointer" onClick={() => ChangeMenuState(!menuopen)} />
             <div
-                className={`fixed inset-0 bg-[#1e1e2f] transform transition-transform duration-300 ease-in-out ${menuopen ? 'translate-y-0' : '-translate-y-full'} xl:hidden`}>
+                className={`fixed inset-0 transform transition-transform duration-300 ease-in-out ${menuopen ? 'translate-y-0' : '-translate-y-full'} xl:hidden`}>
                 {menuopen && <Menu ChngMenuState={ChangeMenuState} />}
             </div>
         </nav>
