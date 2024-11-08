@@ -26,7 +26,7 @@ export const Hero = () => {
       <div className="relative z-20 h-full flex flex-col justify-center items-center text-white px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
-            Transforming Ideas Into
+            Transforming Ideas Into<br/>
             <span className="text-blue-500"> Digital Reality</span>
           </h1>
 

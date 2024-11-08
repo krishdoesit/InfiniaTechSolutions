@@ -12,6 +12,7 @@ import { Contact } from './routes/Contact';
 import { ErrorPage } from './routes/ErrorPage';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
+// when page renders for first time get list of service from the database and store in dictionary from get-data.js/get-service-list function
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <StrictMode>
