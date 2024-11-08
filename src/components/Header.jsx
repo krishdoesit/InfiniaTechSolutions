@@ -42,7 +42,7 @@ export const Header = () => {
     const [menuopen, ChangeMenuState] = useState(false);
 
     return (
-        <nav className="fixed flex justify-between items-center px-[5rem] max-md:px-[2rem] p-[1rem] text-white bg-[#1e1e2f] w-full top-0 left-0 shadow-md z-[1000] max-xl:justify-between">
+        <nav className="sticky flex justify-between items-center px-[5rem] max-md:px-[2rem] p-[1rem] text-white bg-[#1e1e2f] w-full top-0 left-0 shadow-md z-[1000] max-xl:justify-between">
             <a className="font-black max-md:text-lg" href="/">
                 INFINIA TECH SOLUTIONS
             </a>
@@ -53,7 +53,7 @@ export const Header = () => {
                 <Link to='/about' className="nav-links"> About Us</Link>
                 <Link to='/contact' className="nav-links"> Contact Us</Link>
             </div>
-            <img src={menub} alt="Open Menu" className="max-xl:visible max-md:max-h-[1.5rem] cursor-pointer" onClick={() => ChangeMenuState(!menuopen)} />
+            <img src={menub} alt="Open Menu" className="visible xl:hidden max-md:max-h-[1.5rem] cursor-pointer" onClick={() => ChangeMenuState(!menuopen)} />
             <div
                 className={`fixed inset-0 bg-[#1e1e2f] transform transition-transform duration-300 ease-in-out ${menuopen ? 'translate-y-0' : '-translate-y-full'} xl:hidden`}>
                 {menuopen && <Menu ChngMenuState={ChangeMenuState} />}

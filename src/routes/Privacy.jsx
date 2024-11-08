@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Error = () => {
+export const Privacy = () => {
     return(
         <div>
             

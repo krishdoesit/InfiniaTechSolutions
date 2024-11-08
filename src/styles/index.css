@@ -10,6 +10,10 @@ body {
     font-size: 3vmin;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
@@ -19,6 +23,7 @@ code {
 }
 
 .nav-links {
+    font-size: large;
     text-decoration: none; /* Remove the default underline */
     transition: all 0.4s ease; /* Optional: Adds a smooth transition effect */
 }
