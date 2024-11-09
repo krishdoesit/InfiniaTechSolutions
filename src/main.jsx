@@ -24,6 +24,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/about" element={<About />} />/
           {/* TODO: CHANGE THIS SERVICE PAGE TO DYNAMIC LIKE FETCH ALL SERVICES AND CREATE ROUTES FOR EACH PAGE */}
           <Route path="/services/:servicename" element={<Service Service_id="pass id here so that the data can be fetched on other page using this" />} />
+          {/* enable blog after wards */}
+          {/* <Route path="/blog" element={<Blog />} /> */}
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path='*' element={<ErrorPage />} />

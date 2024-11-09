@@ -20,8 +20,8 @@ export const Footer = () => {
 
 
     return (
-        <footer className="bg-[#1e1e2f] text-white py-8  w-screen text-center px-[5rem] max-md:px-[2rem] p-[1rem]">
-            <div className="flex flex-col items-center justify-evenly gap-6 mx-auto px-4">
+        <footer className="bg-[#1e1e2f] text-white py-8  w-full text-center px-[5rem] max-md:px-[2rem] p-[1rem]">
+            <div className="flex flex-col w-full items-center justify-between gap-6 px-4">
                 {/* Quick Links */}
                 <div className="flex max-md:flex-col gap-6 max-sm:gap-4 max-xl:text-sm max-xs:text-xs text-xl text-left">
                     {/* Company  */}
@@ -75,6 +75,8 @@ export const Footer = () => {
                                 ))}
                             </div>
                         )}
+                        {/* enable afterwards */}
+                        {/* <Link to='/blog' className="text-gray-300 hover:text-blue-500 transition-colors duration-200 col-span-1"> Blog </Link> */}
 
                         <Link to="/about" className="text-gray-300 hover:text-blue-500 transition-colors duration-200 col-span-1">
                             About
@@ -89,8 +91,8 @@ export const Footer = () => {
                     <hr />
                     <div className='newsletter flex flex-col gap-4 items-start max-sm:text-md'>
                         <h2 className='font-extrabold'>Newsletter Signup</h2>
-                        <span className='text-left max-sm:text-xs'>Sign up to for newsletter to receive exclusive news directly to your inbox.</span>
-                        <input type="email" name="Email" id="user-email" className='w-full border-solid border-black rounded-lg p-2 text-black' placeholder='Enter email address'/>
+                        <span className='text-left text-sm max-sm:text-xs'>Sign up to for newsletter to receive exclusive news directly to your inbox.</span>
+                        <input type="email" name="Email" id="user-email" className='w-auto border-solid border-black rounded-lg p-2 text-black' placeholder='Enter email address'/>
                         {/* TODO: on click save email to database for future updates and send automated email to user to notify that they have updated to our newsletter */}
                         <input type="submit" value="Subscribe" className='border-solid border-black rounded-lg p-2 bg-red-600 font-extrabold' />
                     </div>
@@ -99,7 +101,7 @@ export const Footer = () => {
 
             {/* Copyright */}
             <p className="text-sm text-gray-300 mt-6 max-xs:text-xs">
-                © {new Date().getFullYear()} InfiniaTech Solutions.<br />All rights reserved.
+                © {new Date().getFullYear()} Infinia Tech Solutions<br />All rights reserved.
             </p>
         </footer>
     );
