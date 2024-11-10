@@ -5,7 +5,7 @@ import bgimg from '../assets/neural network.jpg';
 
 export const Hero = () => {
   return (
-    <div className="relative h-screen w-full overflow-hidden bg-black">
+    <div className="relative h-[65vh] w-full overflow-hidden bg-black">
       {/* Video Background */}
       {/* <video
         autoPlay
